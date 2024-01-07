@@ -1,5 +1,5 @@
 #Practical example 2 - Timing
-import time
+import threading
 
 def timed(function):
     def wrapper(*args, **kwargs):
