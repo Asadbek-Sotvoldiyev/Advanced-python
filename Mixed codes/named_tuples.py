@@ -4,5 +4,6 @@ Student = namedtuple('Student', ['name', 'age', 'group'])
 
 new_tuple = Student('Asadbek', 20, 'FN7')
 new_tuple = new_tuple._replace(age = 30)
-print(new_tuple)
+print(new_tuple.__getnewargs__())
+print(new_tuple._fields)
 
